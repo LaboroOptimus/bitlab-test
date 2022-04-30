@@ -1,0 +1,24 @@
+@mixin SpaceMono700 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+@mixin SpaceMono400 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+}
+
+@mixin Inter500 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+@mixin CourierPrime {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+}
+
+@mixin Altasi400 {
+  font-family: "Alatsi", sans-serif;
+  font-weight: 400;
+}

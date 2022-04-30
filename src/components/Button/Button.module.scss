@@ -1,0 +1,18 @@
+@import "../../const/mixins.scss";
+
+.button {
+  @include SpaceMono700;
+  background-color: #783aff;
+  border-radius: 10.3333px;
+  padding: 15.5px 29.2778px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 25px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #672de4;
+  }
+}

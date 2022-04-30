@@ -1,0 +1,79 @@
+@import "../../const/mixins.scss";
+
+.container {
+  padding: 28px 0 35px 13px;
+  border-left: 2px solid #33334b;
+  margin-left: 50px;
+
+  & > h3 {
+    @include SpaceMono700;
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #fff;
+    position: relative;
+    margin-top: 0;
+
+    & > svg {
+      position: absolute;
+      left: -20px;
+      top: 10px;
+    }
+  }
+}
+.fees {
+  display: flex;
+  padding: 10px 115px 20px 20px;
+  background-color: rgba(51, 51, 75, 0.43);
+  border: 1px solid #33334b;
+  border-radius: 16px;
+  align-items: center;
+  max-height: 50px;
+
+  & > span {
+    @include SpaceMono400;
+    font-size: 58px;
+    color: #fff;
+    margin-right: 29px;
+    margin-left: 13px;
+  }
+
+  & > span.plus {
+    margin-right: 29px;
+    margin-left: 13px;
+  }
+
+  & > span.equal {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  & > .feesItem:last-of-type {
+    & > h4 {
+      @include SpaceMono700;
+    }
+
+    & > p {
+      @include SpaceMono700;
+    }
+  }
+
+  & > .feesItem {
+    display: flex;
+    flex-direction: column;
+
+    & > h4 {
+      @include SpaceMono400;
+      font-size: 16px;
+      color: #ffffff;
+      opacity: 0.5;
+      margin: 0;
+    }
+
+    & > p {
+      @include SpaceMono400;
+      color: #fff;
+      font-size: 21px;
+      margin: 0;
+    }
+  }
+}

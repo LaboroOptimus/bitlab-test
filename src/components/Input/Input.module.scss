@@ -1,0 +1,53 @@
+@import "../../const/mixins.scss";
+
+.container {
+  background-color: #33334b;
+  border-radius: 16px;
+  padding: 28px 20px 31px 20px;
+
+  & > span {
+    @include SpaceMono700;
+    font-size: 18;
+    color: #fff;
+  }
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+
+  & > input {
+    @include CourierPrime;
+    font-size: 40px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding: 0;
+    color: #fff;
+    width: 40%;
+  }
+
+  & > input::-webkit-outer-spin-button,
+  & > input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  & > .currency {
+    display: flex;
+    align-items: center;
+
+    & > span {
+      @include SpaceMono700;
+      color: #fff;
+      font-size: 33px;
+      margin-right: 20px;
+    }
+
+    & > svg:last-of-type {
+      margin-left: 12px;
+    }
+  }
+}
